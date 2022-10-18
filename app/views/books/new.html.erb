@@ -1,0 +1,13 @@
+<% if @book.errors.any? %>
+  <%= @book.errors.count %>errors prohabited this book from being saved:
+  <ul>
+    <% @book.errors.full_messages.each do |messsage| %>
+      <li><%= message %></li>
+      <% end %>
+  </ul>
+  <% end %> 
+    <%= form_with model: Book.new do |f| %>
+    <% end 
+  <%= form_with model: Book.new do |f| %>
+
+<% end %>
